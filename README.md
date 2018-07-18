@@ -1,4 +1,4 @@
-# SwiftCodeSnippets
+# Swift Code Snippets
 
 **Note:** `cs` is short for `Code Snippets`
 
