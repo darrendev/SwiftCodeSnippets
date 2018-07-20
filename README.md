@@ -299,7 +299,7 @@ extension <#name#>VC {
 }
 ```
 
-##### 8.4csSetupVM
+##### 8.4 csSetupVM
 
 ``` swift
 import UIKit
@@ -452,6 +452,15 @@ var <#name#>Observable: Observable<<#type#>> {
         return <#name#>Subject.asObservable()
     }
     private var <#name#>Subject = PublishSubject<<#type#>>()
+```
+
+##### 8.15 csRxObserverCreate
+
+``` swift
+ <#observer#> = AnyObserver(eventHandler: { [weak self] (event) in
+    guard let `self` = self, let element = event.element else { return }
+
+})
 ```
 
 ## 9. Misc
